@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   name: mynginx-rc
-spc:
+spec:
   replicas: 5
   selector:
     app: mynginx
@@ -10,7 +10,7 @@ spc:
    metadata: 
      labels:
        app: mynginx
-   spc:
+   spec:
      containers:
      - name: mynginx-container
        image: nginx
